@@ -1,0 +1,94 @@
+/* Navbar section */
+.navbar{
+    position: fixed;
+    top: 0%;
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+ul{
+    list-style-type: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    margin-top: 0%;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    padding: 25px;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+}
+/* banner section */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    background-color: #dcdfb7;
+}
+.banner .image img {
+    width: 100%;
+}
+.banner .content{
+    font-family: "Lato", sans-serif;
+    padding: 6% 0%;
+}
+.banner .content .title{
+    font-size: 50px;
+}
+.banner .content .title span{
+    font-weight: 600;
+}
+.banner .content .btn{
+    background-color: #6b8363;
+    color: #fff;
+    font-size: 16px;
+    font-family: 700;
+    padding: 2% 5%;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-family: "Lato", sans-serif;
+}
+/* about me section */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+.about .image .img{
+    width: 80%;
+}
+.about .content{
+    font-family: "Lato", sans-serif;
+    padding: 20% 10%;
+}
+.about .content .title{
+    font-size: 28px;
+    font-weight: 700;
+}
+.about .content .desc{
+    font-size: 19px;
+}
+/* skills section */
+.skills .section{
+    font-family: "Lato", sans-serif;
+    padding: 2% 10%;
+    background-color: #dcdfb7;
+}
+.skills .content.title{
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+}
+.skills .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4 25%);
+}
+.skills .grid-container .grid-item{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-bottom: 5px solid #6d8363;
+    padding: ;
+}

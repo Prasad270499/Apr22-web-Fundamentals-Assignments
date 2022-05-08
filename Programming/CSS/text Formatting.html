@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Formatting Document</title>
+    <style>
+        body{
+            margin-bottom: 1000px;
+        }
+        div{
+            width: 500px;
+            border: 2px solid black;
+            margin: 100px auto;
+            padding: 20px;
+        }
+        h2:first-child{
+            text-align: center;
+        }
+        h2{
+            border: 2px solid red;
+            padding: 10px;
+        }
+        #color h2{
+            color: green;
+        }
+        #color h2 :nth-child(2){
+            color: red;
+        }
+        #TC{
+            width: 800px;
+            height: 500px;
+            background-image: url(data:image/jpeg;base64,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);
+            background-position: center;
+            background-size: contain;
+        }
+        h3{
+            width: 500px;
+            padding: 50px;
+            margin: 30px auto;
+            background-color: rgba(255, 0, 0, 0.3)
+        }
+        a{
+            text-decoration: none;
+        }
+        h4{
+            text-decoration: overline;
+        }
+        #TD p {
+            text-indent: 30px;
+            letter-spacing: 5px;
+        }
+        span{
+            word-spacing: 20px;
+        }
+        #boxshadow{
+            width: 500px;
+            text-align: center;
+            padding: 30px;
+            box-shadow: 0 0 30px black;
+        }
+        #boxshadow h1{
+            text-shadow: 5px 5px 10px khaki;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p style="font-size: xx-large; text-align: center;">text Align Property</p>
+        <h2>Welcome To Geekster</h2>
+        <h2 style="text-align: right;">Welcome To Geekster</h2>
+        <h2>Welcome To Geekster</h2>
+    </div>
+    <div>
+        <p style="font-size: xx-large; text-align: center;">Color Property</p>
+        <h2>CSS is So Easy</h2>
+        <h2>CSS is So Easy</h2>
+    </div>
+    <div id="TC">
+        <h3>Transparent Color</h3>
+    </div>
+    <div id="TD">
+        <h4>Geekster</h4>
+        <a href="">Anchor Element</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur assumenda culpa ratione tenetur est error id non repudiandae facere aliquam deserunt at odit et quaerat sequi omnis, temporibus quod deleniti fugiat mollitia fugit sed, laudantium accusantium? Animi atque eveniet porro omnis sunt, hic quis incidunt? Ipsa voluptatibus illum amet reprehenderit.</p>
+        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus illo fuga accusamus eveniet rem doloribus reprehenderit sed minus vitae aut alias exercitationem quaerat modi dolorum, beatae quisquam labore? Vero necessitatibus at sit hic, numquam reiciendis reprehenderit, nisi repellat, quae odit tenetur dolor minus in! Maiores nesciunt culpa omnis incidunt quo. Velit labore ad aspernatur dolore illo exercitationem tempora nesciunt fuga possimus quas accusantium, architecto, asperiores quibusdam, enim natus ullam ducimus nulla adipisci. Magni porro officiis, facere adipisci optio similique unde molestiae aliquid cumque deleniti recusandae ea temporibus nobis sit sint odio nemo hic repellat vel rem? Provident, corporis! Quidem, cupiditate!</span>
+    </div>
+    <div id="boxshadow">
+        <h1>Box Shadow</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda laborum quaerat aut repellat velit sapiente praesentium consectetur quis odit, molestiae perferendis culpa facilis dolorem eligendi! Suscipit quibusdam dolor ipsam doloribus aspernatur explicabo reiciendis ad, ipsum sit voluptate. Enim reiciendis recusandae suscipit! Fuga, eligendi facilis ad, ipsa earum deleniti, dolor fugiat sed architecto beatae atque quam. Modi iusto temporibus, nam recusandae quo numquam molestiae nisi magni ratione aut quod maiores illo dignissimos eius, unde vel est laudantium sunt commodi obcaecati ab nostrum! Praesentium totam dolorem tenetur aperiam nesciunt fugiat dolores, consectetur incidunt eum aut cumque quas explicabo nihil dignissimos iure ipsam illo est numquam, eveniet beatae nam at et quidem. Nesciunt ipsa voluptatem animi sunt tenetur blanditiis quidem? Ipsum, praesentium quos.</p>
+    </div>
+</body>
+</html>

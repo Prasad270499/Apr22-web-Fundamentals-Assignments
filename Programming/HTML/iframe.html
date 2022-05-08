@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        a{
+            color: khaki;
+            text-decoration: none;
+             background-color: brown;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+        }
+        #menu{
+           
+            flex: 1;
+            border-right: 5px solid blueviolet;
+        }
+        #iframe{
+            flex: 4;
+        }
+        iframe{
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="menu">
+            <div>
+                <a href="HTMLHome.html" target="rightPanel">HTML</a>
+            </div>
+            <div>
+                <a href="CSSHome.html" target="rightPanel">CSS</a>
+            </div>
+            <div>
+                <a href="JSHome.html" target="rightPanel">JS</a>
+            </div>
+            <div>
+                <a href="ReactHome.html" target="rightPanel">React</a>
+            </div>
+            <div>
+                <a href="JavaDSAHome.html" target="rightPanel">Java With DSA</a>
+            </div>
+        </div>
+        <div id="iframe">
+            <iframe name="rightPanel"></iframe>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <style>
+        a {
+            color: khaki;
+            text-decoration: none;
+            background-color: brown;
+            text-align: center;
+        }
+    
+        .container {
+            display: flex;
+        }
+    
+        #menu {
+    
+            flex: 1;
+            border-right: 5px solid blueviolet;
+        }
+    
+        #iframe {
+            flex: 4;
+        }
+    
+        iframe {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="menu">
+            <div>
+                <a href="mobile.html" target="rightPanel">Mobile</a>
+            </div>
+            <div>
+                <a href="TV.html" target="rightPanel">Tv</a>
+            </div>
+            <div>
+                <a href="Laptops.html" target="rightPanel">Laptops</a>
+            </div>
+            <div>
+                <a href="MensClothing.html" target="rightPanel">Men's Clothing</a>
+            </div>
+        </div>
+        <div id="iframe">
+            <iframe name="rightPanel"></iframe>
+        </div>
+    </div>
+</body>
+</html>

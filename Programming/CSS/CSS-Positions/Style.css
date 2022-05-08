@@ -1,0 +1,13 @@
+.parent{
+    position: relative;
+}
+.child-one{
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+.child-two{
+}
+.child-three{
+
+}
