@@ -18,10 +18,26 @@ body {
     width: var(--off-canvas-width);
 }
 
+.divider {
+    width: var(--off-canvas-width);
+}
+
 @media (min-width: 992px) {
     body {
         overflow: auto !important;
     }
 
-    .sidebar-nav {}
+    .offcanvas-backdrop.show {
+        opacity: 0;
+    }
+
+    .sidebar-nav {
+        visibility: visible !important;
+        transform: none !important;
+        top: var(--topNavbarHeight);
+        height: calc(100% - var(--topNavbarHeight));
+    }
+    main{
+        margin-left: var(--off-canvas-width);
+    }
 }

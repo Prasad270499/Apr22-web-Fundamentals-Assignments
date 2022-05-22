@@ -1,145 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
 </head>
 <body>
-    <div class="main-container">
-        <header class="navbar">
-            <div class="logo">
-                <h1>logo</h1>
-            </div>
-            <div class="nav-items">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#home">Skills</a></li>
-                    <li><a href="#home">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <!-- banner section -->
-        <section class="container banner">
-            <div class="image">
-                <img src="./images/chair-gray-background_50883-232-removebg-preview.png" alt=""/>
-            </div>
-            <div class="content">
-                <h4>QUALITY DESIGN FOR ALL</h4>
-                <h2>
-                    Bring back the classic look by using Shade. Easy home delivery
-                </h2>
-                <p>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet 
-                    sint. Velit officia consequat duis enim velit mollit.
-                </p>
-                <button class="btn">Explore</button>
-            </div>
-        </section>
-        <!-- features section -->
-        <section class="container features">
-            <div class="feature-wrapper">
-                <div class="feature">
-                    <div class="icon"><i class="fa-regular fa-star"></i></div>
-                    <div class="content">
-                        <h2>Best Quality</h2>
-                        <p>A team of experts passionate about product management.</p>
+    <div class="container bg-info p-2">
+        <div class="card">
+            <div class="card-header bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <div class="container-md">
+                        <a class="navbar-brand" href="#">Geekster</a>
                     </div>
-                </div>
-                <div class="feature">
-                    <div class="icon"><i class="fa-regular fa-star"></i></div>
-                    <div class="content">
-                        <h2>Best Quality</h2>
-                        <p>A team of experts passionate about product management.</p>
+                </nav>
+                <nav class="navbar navbar-light bg-secondary">
+                    <div class="container-fluid">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-danger" type="submit">Search</button>
+                        </form>
                     </div>
-                </div>
-                <div class="feature">
-                    <div class="icon"><i class="fa-regular fa-star"></i></div>
-                    <div class="content">
-                        <h2>Best Quality</h2>
-                        <p>A team of experts passionate about product management.</p>
+                </nav>
+            </div>
+            <div class="card-body bg-danger">
+                <div class="row">
+                    <div class="col-4 bg-secondary text-white p-2">
+                        <img src="data:image/png;base64,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" height="100px" width="100px">
+                        <h2>Geekster</h2>
+                        <p>Geekster is a modern Ed tech company who offers online coding course at zero upfront fee and provide complete placement
+                        assistance. Click to learn more.</p>
+                        <button class="btn btn-outline-primary">Apply Now</button>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- gallery section -->
-        <section class="container gallery">
-            <div class="content">
-                Explor our exclusive design
-            </div>
-            <div class="images">
-                <div class="flex-item">
-                    <img src="./images/600007627-20_MAZELTOV_HAMSA__DPC_SCENE_700x.png" alt=""/>
-                </div>
-                <div class="flex-item">
-                    <img src="./images/600007627-20_MAZELTOV_HAMSA__DPC_SCENE_700x.png" alt="" />
-                </div>
-                <div class="flex-item">
-                    <img src="./images/600007627-20_MAZELTOV_HAMSA__DPC_SCENE_700x.png" alt="" />
-                </div>
-            </div>
-        </section>
-        <!-- video-demo section -->
-        <section class="video-demo">
-            <div class="content">
-                <h1>"It was super easy to share my unique concept. I got exactly what I ordered. Great service!"</h1>
-            </div>
-            <div class="video-content">
-                <div class="video">
-                    <a href="https://www.youtube.com/embed/0uB0b4rjuhM" target="_blank"><i class="fa-solid fa-play"></i></a>
-                </div>
-            </div>
-        </section>
-        <!-- newsletter section -->
-        <section class="container newsletter">
-            <div class="content">
-                <h1>
-                    Suscribe to our newsletter to get updated
-                </h1>
-                <p>
-                    Get our latest update on your inbox. With lots of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes
-                </p>
-                <div class="newsletter-form">
-                    <form action="">
-                        <div class="form">
-                            <input type="email" id="email" name="email" class="form-control" placeholder="Enter email Address"/>
-                            <button class="btn">Subscribe</button>
+                    <div class="col-8 bg-dark p-4">
+                        <div class="row">
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                                <div class="container-md">
+                                    <a class="navbar-brand" href="#">Course Details</a>
+                                </div>
+                            </nav>
                         </div>
-                    </form>
+                        <div class="row bg-primary p-2"><b>Geekster</b></div>
+                        <div class="row bg-success p-2">hello@geekster.in</div>
+                        <div class="row bg-light p-2">+91 8882011577</div>
+                        <div class="row bg-warning p-3">603, Welldone Tech Park, Sohna Rd, Sector 48, Gurugram, Haryana 122018</div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- footer section -->
-        <footer class="footer">
-            <div class="wrapper">
-                <div class="items">
-                    <p>CONTACT</p>
-                    <ul>
-                        <li>62 Orp St, Seattle, USA</li>
-                        <li>sales@furnatur.com</li>
-                        <li>+1 800 726 915273</li>
-                    </ul>
-                </div>
-                <div class="items">
-                    <p>PRODUCT</p>
-                    <ul>
-                        <li>Living Rooms</li>
-                        <li>Dinning Rooms</li>
-                        <li>Bed Rooms</li>
-                    </ul>
-                </div>
-                <div class="items">
-                    <p>OUR COMPANY</p>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Contact Us</li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        </div>
     </div>
 </body>
 </html>
