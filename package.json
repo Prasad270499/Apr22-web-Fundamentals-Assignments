@@ -1,0 +1,19 @@
+{
+  "name": "apr22-web-fundamentals-assignments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prasad270499/Apr22-web-Fundamentals-Assignments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prasad270499/Apr22-web-Fundamentals-Assignments/issues"
+  },
+  "homepage": "https://github.com/Prasad270499/Apr22-web-Fundamentals-Assignments#readme"
+}
